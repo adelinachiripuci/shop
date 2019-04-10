@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfumery</title>
+  <link rel="stylesheet" type="text/css" href="details.css" />
+  <link rel="stylesheet" type="text/css" href="grid.css" />
+  <link rel="stylesheet" href="../carousel/flickity.css" media="screen">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:300i" rel="stylesheet">
+  <script src="details.js"></script>
+  <script src="../carousel/flickity.pkgd.min.js"></script>
+
+</head>
+
+<body onload="loading()">
+  <header class="col-lg-9 col-sm-8 col-xs-12 ">
+    <a href="../firstPage/firstPage.html">
+      <div class="col-lg-6 col-sm-8 col-xs-12" id="title">Welcome to Fragrancies</div>
+    </a>
+  </header>
+  <div class="col-lg-9 col-sm-8 col-xs-12 " id="navBar">
+    <a href="firstPage.html">
+      <div class="heads">Home</div>
+    </a>
+    <a href="../cart/cart.html">
+      <div class="cartImage"></div>
+    </a>
+    <div id="nr-of-prod-in-cart"></div>
+    <a href="../cart/cart.html">
+      <div class="heads">Cosul meu</div>
+    </a>
+    <a href="../admin/admin.html" style="display:flex">
+      <div class="adminImage"></div>
+      <div class="heads">Admin</div>
+    </a>
+  </div>
+  <div class="hidden col-lg-9 col-sm-8 col-xs-12 " id="showAdded">Produsul a fost adaugat in cos.</div>
+  <div id="loading" class="col-lg-9 col-sm-8 col-xs-12 ">
+    <img src="https://firebasestorage.googleapis.com/v0/b/parfumerie-99bd8.appspot.com/o/dots.gif?alt=media&token=0b85c0e6-cd0d-437b-9948-25e32fe55909" alt="">
+  </div>
+  <div id="content" class="col-lg-9 col-sm-8 col-xs-12 hidden">
+
+    <div id="presentationContainer">
+      <div id="image" class="col-lg-6 col-sm-8 col-xs-12">
+        <img src="" alt="parfume">
+      </div>
+      <div id="nameBrandContainer" class="col-xs-12 col-sm-9 col-lg-6">
+        <div id="name"></div>
+        <div id="brand"></div>
+        <div>eau de parfum <span>pentru</span></div>
+        <div id="quantity"></div>
+        <div id="price-order">
+          <div id="price"></div>
+          <div style="display:flex">
+            Cantitate <input type="number" name="quantity" min="1" value="1">
+            <div id="unavailable-product" class="hidden">produs indisponibil</div>
+          </div>
+          <div id="order">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="description">
+    </div>
+    <div id="advertising">
+      Advertising
+    </div>
+    <div class="carousel" data-flickity='{ "freeScroll": true }'>
+      <div class="carousel-cell  ">
+        <img src="https://firebasestorage.googleapis.com/v0/b/parfumerie-99bd8.appspot.com/o/lancome-vie.jpg?alt=media&token=63479530-1a32-49c2-b73a-e712ff97a035" />
+      </div>
+      <div class="carousel-cell ">
+        <img src="https://firebasestorage.googleapis.com/v0/b/parfumerie-99bd8.appspot.com/o/si-giorgio-armani.jpg?alt=media&token=9d4aac85-5f05-4b19-90b7-9b9265d4c317" />
+      </div>
+      <div class="carousel-cell  ">
+        <img src="https://firebasestorage.googleapis.com/v0/b/parfumerie-99bd8.appspot.com/o/dior.jpg?alt=media&token=057b3904-9b05-4190-9af8-7b951f578cce" />
+      </div>
+      <div class="carousel-cell ">
+        <img src="https://firebasestorage.googleapis.com/v0/b/parfumerie-99bd8.appspot.com/o/jadore-dior.jpg?alt=media&token=206adf47-baf7-4347-b429-4c14b288d8c8" />
+      </div>
+      <div class="carousel-cell ">
+        <img src="https://firebasestorage.googleapis.com/v0/b/parfumerie-99bd8.appspot.com/o/tom-ford.jpg?alt=media&token=50b26584-9914-4519-bfaf-15b835ddd273" />
+      </div>
+      <div class="carousel-cell ">
+        <img src="https://firebasestorage.googleapis.com/v0/b/parfumerie-99bd8.appspot.com/o/mugler.jpg?alt=media&token=18a568f1-6566-4674-aba4-3878ab85e70c" />
+      </div>
+      <div class="carousel-cell">
+        <img src="https://firebasestorage.googleapis.com/v0/b/parfumerie-99bd8.appspot.com/o/jean-paul-gaultier.jpg?alt=media&token=210785db-c4af-4c58-91c1-c09fd1f46db0" />
+      </div>
+      <div class="carousel-cell ">
+        <img src="https://firebasestorage.googleapis.com/v0/b/parfumerie-99bd8.appspot.com/o/yves-saint-laurent.jpg?alt=media&token=7c8f7b1b-a432-4fe7-a085-d90a311ccaa2" />
+      </div>
+      <div class="carousel-cell ">
+        <img src="https://firebasestorage.googleapis.com/v0/b/parfumerie-99bd8.appspot.com/o/light-dolce.jpg?alt=media&token=a8ef5755-3fb2-4bac-8c71-83e5344798e4" />
+      </div>
+      <div class="carousel-cell ">
+        <img src="https://firebasestorage.googleapis.com/v0/b/parfumerie-99bd8.appspot.com/o/tobacco-tom-ford.jpg?alt=media&token=c8c4c8eb-de71-43db-b52f-c6c5a3757f67" />
+      </div>
+      <div class="carousel-cell  ">
+        <img src="https://firebasestorage.googleapis.com/v0/b/parfumerie-99bd8.appspot.com/o/versace-dylan.jpg?alt=media&token=9c05844f-34c3-45b9-ad93-fc8320797b3b" />
+      </div>
+
+    </div>
+  </div>
+
+
+
+</body>
+
+</html>

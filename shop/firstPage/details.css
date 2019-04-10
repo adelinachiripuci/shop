@@ -1,0 +1,246 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Merriweather', serif;
+}
+
+body {
+  background-color: #dcebf4;
+}
+
+body > div {
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+.hidden {
+  display: none;
+}
+
+#loading img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 150px;
+  height: 150px;
+}
+
+header a {
+  text-decoration: none;
+  font-family: 'Dancing Script', cursive;
+  color: black;
+}
+
+header {
+  height: 30vh;
+  background-image: url("background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  padding: 40px;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cartImage {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("https://png.pngtree.com/svg/20161205/b5dbd4fc8b.png")
+}
+
+.adminImage {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("http://simpleicon.com/wp-content/uploads/lock-8.png")
+}
+
+#nr-of-prod-in-cart {
+  margin-left: 6px;
+  margin-top: 6px;
+  font-size: 13px;
+  color: #000000;
+}
+
+.heads {
+  font-size: 13px;
+  color: black;
+  padding-top: 7px;
+  margin: 0 8px;
+}
+
+#navBar a {
+  text-decoration: none;
+  color: black;
+}
+
+#navBar {
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  background: linear-gradient(to bottom, #fff 20%, #DCEBF4 100%);
+  background-color: #DCEBF4;
+  border-radius: 4px;
+  border: 1px solid #DCEBF4;
+  color: #383544;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+#showAdded {
+  background: linear-gradient(to top, #48494B 5%, #DCEBF4 70%);
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 50px;
+  color: #3D4454;
+}
+
+#image {
+  text-align: center;
+}
+
+#image img {
+  height: 400px;
+  padding-top: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#presentationContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#title {
+  background-color: #fff;
+  opacity: 0.7;
+  padding: 1.875rem;
+  line-height: 1.6;
+  font-family: 'Dancing Script', cursive;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  letter-spacing: 0.1875rem;
+  transition: transform .6s;
+  text-shadow: 0 0 3px #4c1a2f;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#title:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+  text-shadow: 0 0 3px #4c1a2f;
+}
+
+@media only screen and (max-width: 600px) {
+  #title {
+    padding: 1rem;
+  }
+
+  #title:hover {
+    transform: scale(1);
+    text-shadow: 0 0 3px #4c1a2f;
+  }
+}
+
+#nameBrandContainer {
+  text-align: left;
+  padding-left: 20px;
+}
+
+#name {
+  font-size: 26px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+#brand {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+#price-order {
+  margin-top: 40px;
+}
+
+#price-order input {
+  max-width: 60px;
+  min-height: 25px;
+  border-radius: 2px;
+  border-width: 1px;
+}
+
+#order button {
+  margin-top: 30px;
+  box-shadow: 3px 4px 0px 0px #fcfcfc;
+  background: linear-gradient(to bottom, #fff 5%, #DCEBF4 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#bab1ba', GradientType=0);
+  background-color: #DCEBF4;
+  border-radius: 9px;
+  border: 1px solid #DCEBF4;
+  display: inline-block;
+  cursor: pointer;
+  color: #383544;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 6px 20px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #a0c1d3;
+}
+
+#description {
+  padding: 50px;
+  padding-right: 80px;
+  text-align: justify;
+}
+
+.carousel {
+  background-color: #DCEBF4;
+}
+
+.carousel-cell {
+  margin-right: 10px;
+  border-radius: 5px;
+  counter-increment: gallery-cell;
+  width: 500px;
+  text-align: center;
+}
+
+.carousel-cell img {
+  width: 300px;
+}
+
+#advertising {
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+}
+
+#unavailable-product {
+  font-weight: bold;
+  font-size: 12px;
+  margin-left: 10px;
+}
