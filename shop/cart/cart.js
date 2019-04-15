@@ -116,7 +116,7 @@ async function decrease(i) {
     var el = Number(list[i].quantity);
     el -= 1;
     await ajax("PUT", `https://parfumerie-99bd8.firebaseio.com/cart/${i}/quantity.json`, JSON.stringify(el))
-      .then(getCart())
+    await getCart();
   }
   await getNumberOfProdInCart()
 };
