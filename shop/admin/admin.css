@@ -38,11 +38,18 @@ header a {
 .remove {
   color: #5C2A43;
   font-weight: bold;
+  cursor: pointer;
+}
+
+button[name="button"] {
+  cursor: pointer;
 }
 
 .name {
   color: #2E3140;
   font-weight: 600;
+  cursor: pointer;
+
 }
 
 #title {
