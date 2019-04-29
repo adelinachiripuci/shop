@@ -120,8 +120,11 @@ async function saveChanges() {
 }
 
 async function deleteProduct(i) {
-  await ajax("DELETE", `https://parfumerie-99bd8.firebaseio.com/products/${i}.json`)
-  await getProducts();
+  if(confirm(`Vrei sa stergi produsul ${list[i].name}`) == true) {
+    await ajax("DELETE", `https://parfumerie-99bd8.firebaseio.com/products/${i}.json`)
+    await getProducts();
+  }
+
 
 }
 
