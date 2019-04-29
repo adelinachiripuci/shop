@@ -29,6 +29,19 @@ body > div {
   height: 150px;
 }
 
+#price-order input {
+  width:4vw;
+  font-size: 16px;
+  text-align: center;
+  margin-left: 20px;
+  margin-bottom: 10px;}
+
+@media screen and (max-width: 600px) {
+  #price-order input {
+    width:8vw;
+  }
+}
+
 header a {
   text-decoration: none;
   font-family: 'Dancing Script', cursive;
