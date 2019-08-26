@@ -2,7 +2,52 @@ var list = {};
 var insufficientStock = [];
 var products = {};
 var err = "S-a produs o eroare."
+let footer = `<div id="footer" style="
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    background-color: #eee;
+    padding: 71px;
+">
+    <div>
+                 <h2>Contact</h2>
 
+        <div style="
+    margin-top: 10px;
+">Str. Emanoil Porumbaru 81</div>
+                <div style="
+    margin-top: 10px;
+">0777777777</div>
+         <div style="
+    margin-top: 10px;
+">mail@yahoo.com</div>
+
+    </div>
+        <div>
+    <h2>Info</h2>
+    <div style="
+    margin-top: 10px;
+">
+    About us
+    </div>
+    <div style="
+    margin-top: 10px;
+">
+    FAQ
+    </div>
+    <div style="
+    margin-top: 10px;
+">
+Delivery    </div>
+</div>
+
+
+
+
+
+</div>
+
+`
 
 async function ajax(method, url, body) {
   return new Promise(function(resolve, reject) {
@@ -94,6 +139,7 @@ async function draw() {
 
   }
   await getNumberOfProdInCart()
+  document.querySelector("#footer").innerHTML = footer;
   document.querySelector("#products").innerHTML = str;
 };
 
@@ -188,7 +234,6 @@ async function getNumberOfProdInCart() {
 };
 
 async function showPage() {
-  document.querySelector("#loading").style.display = "none";
   document.querySelector("#content").classList.remove("hidden");
   document.querySelector("#products").classList.remove("hidden");
   await getCart();
