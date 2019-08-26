@@ -2,12 +2,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-    font-family: 'Merriweather', serif;
+    font-family: Helvetica,Arial,sans-serif;
 }
 
-body {
-  background-color: #dcebf4;
-}
+
 
 body > div {
   background-color: #fff;
@@ -54,18 +52,18 @@ button[name="button"] {
 
 #title {
   background-color: #fff;
-  opacity: 0.7;
-  padding: 1.875rem;
-  line-height: 1.6;
-  font-family: 'Dancing Script', cursive;
-  margin: 0 auto;
-  text-align: center;
-  font-weight: bold;
-  font-size: 2rem;
-  letter-spacing: 0.1875rem;
-  transition: transform .6s;
-  text-shadow: 0 0 3px #4c1a2f;
-  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 0, 0.19);
+opacity: 0.7;
+padding: 1.875rem;
+line-height: 1.6;
+font-family: 'Dancing Script', cursive;
+margin: 0 auto;
+text-align: center;
+font-weight: bold;
+font-size: 3rem;
+letter-spacing: 0.1875rem;
+transition: transform .6s;
+box-shadow: 2px 3px 84px 16px rgba(0,0,0,1);
+margin-top: 40px;
 }
 
 #title:hover {
@@ -102,16 +100,15 @@ button[name="button"] {
 }
 
 header {
-  height: 30vh;
-  background-image: url("../firstPage/background.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  margin: 0 auto;
-  position: sticky;
-  padding: 40px;
-  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 0, 0.19);
+    background-image: url(../firstPage/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 40px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 }
 
 .cartImage {
@@ -135,10 +132,10 @@ header {
 }
 
 .heads {
-  font-size: 13px;
-  color: black;
-  padding-top: 7px;
-  margin: 0 8px;
+  font-size: 16px;
+    color: black;
+    padding-top: 7px;
+    margin: 0 8px;
 }
 
 .managing-products-container {
@@ -150,13 +147,12 @@ header {
 }
 
 .managing-products-container>div:last-child button {
-  padding: 10px;
-  border-radius: 6px;
+  padding: 15px;
   color: #fff;
-  background-color: #39ced3;
-  font-weight: bold;
+  background-color: #B5000A;
+  font-weight: 700;
   letter-spacing: 1px;
-  border-width: 1px;
+  border: none;
 }
 
 .editing-products-container {
@@ -164,6 +160,21 @@ header {
   font-weight: bold;
   padding: 30px;
 }
+.adding-products-container {
+  margin: 50px;
+}
+.adding-products-container input[type="submit"]{
+  padding: 5px 10px;
+  background-color: #eee;
+  border: none;
+}
+.adding-products-container  form > input:last-child {
+  padding: 5px 10px;
+  background-color: #eee;
+  border: none;
+}
+
+
 
 .editing-products-container input {
   margin: 10px;
@@ -180,16 +191,19 @@ header {
 
 #navBar {
   margin: 0 auto;
-  display: flex;
-  justify-content: flex-end;
-  background: linear-gradient(to bottom, #fff 20%, #DCEBF4 100%);
-  background-color: #DCEBF4;
-  border-radius: 4px;
-  border: 1px solid #DCEBF4;
-  color: #383544;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #eee;
+    border-radius: 4px;
+    border: 1px solid #bcbcbc;
+    color: #383544;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 10px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    letter-spacing: 0.5px;
 }
 
 #content {
