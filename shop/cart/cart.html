@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Perfumery</title>
   <link rel="stylesheet" type="text/css" href="cart.css" />
+  <link rel="stylesheet" type="text/css" href="../firstPage/firstPage.css" />
+
   <link rel="stylesheet" type="text/css" href="../firstPage/grid.css" />
   <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Merriweather:300i" rel="stylesheet">
@@ -14,12 +16,11 @@
 </head>
 
 <body onload="loading()">
-  <header class="col-lg-9 col-sm-8 col-xs-12 ">
+  <header class="">
     <a href="../firstPage/firstPage.html">
-      <div class="col-lg-6 col-sm-8 col-xs-12" id="title">Welcome to Fragrancies</div>
-    </a>
+    <div class="col-lg-6 col-sm-8 col-xs-11" id="title">Welcome to Fragrancies</div></a>
   </header>
-  <div class="col-lg-9 col-sm-8 col-xs-12 " id="navBar">
+  <div id="navBar" class="">
     <a href="../firstPage/firstPage.html">
       <div class="heads">Home</div>
     </a>
@@ -36,13 +37,11 @@
     </a>
   </div>
   <div class="hidden col-lg-9 col-sm-8 col-xs-12 " id="unavailable">Nu exista stoc suficient.</div>
-  <div id="loading" class="col-lg-9 col-sm-8 col-xs-12 ">
-    <img src="https://firebasestorage.googleapis.com/v0/b/parfumerie-99bd8.appspot.com/o/dots.gif?alt=media&token=0b85c0e6-cd0d-437b-9948-25e32fe55909" alt="">
-  </div>
-  <div id="content" class="col-lg-9 col-sm-8 col-xs-12 hidden">
-    <div id="products" class="col-lg-9 col-sm-8 col-xs-12 hidden ">
+
+  <div id="content" class=" hidden">
+    <div id="products" class="col-lg-8 col-xs-12 hidden ">
     </div>
-    <div id="orderCosts" class="col-lg-3 col-sm-4 col-xs-12 hidden">
+    <div id="orderCosts" class="col-lg-4 col-xs-12 hidden">
       <div>Sumar comanda</div>
       <div>
         <span>Cost Produse:</span>
@@ -61,6 +60,13 @@
       <button type="text" id="order-button" onclick="order()">Comanda</button>
     </div>
   </div>
+  <div id="footer"></div>
+
+
+
+
+
+</div>
 
 </body>
 
