@@ -1,6 +1,52 @@
 let list = {};
 let cart = {};
 let idx;
+let footer = `<div id="footer" style="
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    background-color: #eee;
+    padding: 71px;
+">
+    <div>
+                 <h2>Contact</h2>
+
+        <div style="
+    margin-top: 10px;
+">Str. Emanoil Porumbaru 81</div>
+                <div style="
+    margin-top: 10px;
+">0777777777</div>
+         <div style="
+    margin-top: 10px;
+">mail@yahoo.com</div>
+
+    </div>
+        <div>
+    <h2>Info</h2>
+    <div style="
+    margin-top: 10px;
+">
+    About us
+    </div>
+    <div style="
+    margin-top: 10px;
+">
+    FAQ
+    </div>
+    <div style="
+    margin-top: 10px;
+">
+Delivery    </div>
+</div>
+
+
+
+
+
+</div>
+
+`
 
 function ajax(method, url, body, callback, rejectCallback) {
   var xhttp = new XMLHttpRequest();
@@ -42,7 +88,6 @@ function loading() {
 
 function showPage() {
   getList();
-  document.querySelector("#loading").style.display = "none";
   document.querySelector("#productsContainer").classList.remove("hidden");
 }
 
@@ -64,7 +109,7 @@ function draw() {
     }
 
     str += `
-    <div class="col-lg-4 col-xs-12 col-sm-6 ">
+    <div class="col-lg-3 col-xs-11 col-sm-6 product">
       <img src="${list[i].image}" alt="parfume"/>
       <div>${list[i].name}</div>
       <div>${list[i].brand}</div>
@@ -76,5 +121,6 @@ function draw() {
   `;
   }
   getNumberOfProdInCart();
+  document.querySelector("#footer").innerHTML = footer;
   document.querySelector("#productsContainer").innerHTML = str;
 }
