@@ -6,12 +6,19 @@
 }
 
 body {
-  background-color: #dcebf4;
+  background-color: #eee;
 }
 
 body > div {
   background-color: #fff;
   margin: 0 auto;
+}
+
+#order button:hover {
+  background-color: #6d1015;
+  color:#fff;
+  border: 1px solid #6d1015;
+  box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.2), 8px 8px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .hidden {
@@ -46,19 +53,9 @@ header a {
   text-decoration: none;
   font-family: 'Dancing Script', cursive;
   color: black;
+  cursor: pointer;
 }
 
-header {
-  height: 30vh;
-  background-image: url("background.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  margin: 0 auto;
-  padding: 40px;
-  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 0, 0.19);
-}
 
 .cartImage {
   display: inline-block;
@@ -103,10 +100,10 @@ header {
   margin: 0 auto;
   display: flex;
   justify-content: flex-end;
-  background: linear-gradient(to bottom, #fff 20%, #DCEBF4 100%);
-  background-color: #DCEBF4;
+  background: linear-gradient(to bottom, #fff 20%, #eee100%);
+  background-color: #eee;
   border-radius: 4px;
-  border: 1px solid #DCEBF4;
+  border: 1px solid #eee;
   color: #383544;
   font-weight: bold;
   text-decoration: none;
@@ -117,7 +114,7 @@ header {
 }
 
 #showAdded {
-  background: linear-gradient(to top, #48494B 5%, #DCEBF4 70%);
+  background: linear-gradient(to top, #48494B 5%, #eee70%);
   text-align: center;
   padding: 10px;
   font-weight: bold;
@@ -146,6 +143,17 @@ header {
   align-items: center;
 }
 
+header {
+  /* height: 40vh; */
+  background-image: url("background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 40px;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 #title {
   background-color: #fff;
   opacity: 0.7;
@@ -155,17 +163,20 @@ header {
   margin: 0 auto;
   text-align: center;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 3rem;
   letter-spacing: 0.1875rem;
   transition: transform .6s;
-  text-shadow: 0 0 3px #4c1a2f;
-  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 6px 6px 214px 36px rgba(0,0,0,1);
+  margin-top: 40px;
+
 }
 
 #title:hover {
   transform: scale(1.2);
-  opacity: 0.8;
-  text-shadow: 0 0 3px #4c1a2f;
+  opacity: 0.9;
+  text-shadow: 1px 1px 1px #4c1a2f;
+  box-shadow: inset 2px 2px 104px -51px rgba(0,0,0,1);
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -209,19 +220,19 @@ header {
 #order button {
   margin-top: 30px;
   box-shadow: 3px 4px 0px 0px #fcfcfc;
-  background: linear-gradient(to bottom, #fff 5%, #DCEBF4 100%);
+  background: linear-gradient(to bottom, #fff 5%, #eee100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#bab1ba', GradientType=0);
-  background-color: #DCEBF4;
-  border-radius: 9px;
-  border: 1px solid #DCEBF4;
+  background-color: #fff;
+  /* border-radius: 9px; */
+  border: 1px solid black;
   display: inline-block;
   cursor: pointer;
   color: #383544;
   font-weight: bold;
-  font-size: 12px;
-  padding: 6px 20px;
+  font-size: 14px;
+  padding: 9px 20px;
   text-decoration: none;
-  text-shadow: 0px 1px 0px #a0c1d3;
+  /* text-shadow: 0px 1px 0px #a0c1d3; */
 }
 
 #description {
@@ -231,7 +242,7 @@ header {
 }
 
 .carousel {
-  background-color: #DCEBF4;
+  background-color: #eee;
 }
 
 .carousel-cell {
