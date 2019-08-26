@@ -18,9 +18,9 @@ fetch(url)
     stock = products.stock;
 
     if (products.sex === "feminin") {
-      type.innerHTML += " femei";
+      type.innerHTML += " pentru femei";
     } else if (products.sex === "masculin") {
-      type.innerHTML += " barbati";
+      type.innerHTML += " pentru barbati";
     } else {
       type.innerHTML = "unisex";
     }
@@ -53,10 +53,10 @@ function loading() {
 }
 
 function showPage() {
-  var flkty = new Flickity('.carousel');
+  // var flkty = new Flickity('.carousel');
   document.querySelector("#loading").style.display = "none";
   document.querySelector("#content").classList.remove("hidden");
-  flkty.resize();
+  // flkty.resize();
   getNumberOfProdInCart();
 }
 
