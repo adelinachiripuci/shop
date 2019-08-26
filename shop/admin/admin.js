@@ -149,7 +149,6 @@ function loading() {
 
 async function showPage() {
   await getProducts();
-  document.querySelector("#loading").style.display = "none";
   document.querySelector("#content").classList.remove("hidden");
 
 }
